@@ -9,7 +9,7 @@ public class Task7 {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
         LocalTime alarmTime = null;
 
-        // Ask user for alarm time
+        
         while (alarmTime == null) {
             try {
                 System.out.print("Enter an alarm time (HH:MM:SS): ");
@@ -21,11 +21,11 @@ public class Task7 {
             }
         }
 
-        // Start alarm thread
+        
         Thread alarmThread = new Thread(new AlarmClock(alarmTime));
         alarmThread.start();
 
-        // Wait for user to press Enter after alarm
+        
         scanner.nextLine();
         System.out.println("Program ended.");
         scanner.close();

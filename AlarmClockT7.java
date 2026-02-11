@@ -19,7 +19,7 @@ public class AlarmClockT7 implements Runnable {
             Duration remaining = Duration.between(now, alarmTime);
 
             if (!remaining.isPositive() || remaining.isZero()) {
-                break; // alarm reached
+                break; 
             }
 
             long hours = remaining.toHours();
@@ -30,7 +30,7 @@ public class AlarmClockT7 implements Runnable {
             System.out.printf("%02d:%02d:%02d remaining%n", hours, minutes, seconds);
 
             try {
-                Thread.sleep(1000); // wait 1 second
+                Thread.sleep(1000); 
             } catch (InterruptedException e) {
                 System.out.println("Thread interrupted!");
                 return;
