@@ -36,7 +36,7 @@ public class GarbageCollectorDemo {
         System.gc();
         System.out.println("\n--- Creating Temporary Student Objects ---");
         for (int i = 4; i <= 20; i++) {
-            Student temp = new Student(i, "TempStudent" + i);
+            Student Temp = new Student(i, "TempStudent" + i);
         }
         System.out.println("\n--- Clearing Remaining References ---");
         System.gc();

@@ -1,12 +1,11 @@
-// Jvdroid-main: 
-// Parent Class (Base Class)
+
 class Person {
 
-    // Encapsulated variables (private)
+    
     private String name;
     private int age;
 
-    // Setters (Write data)
+   
     public void setName(String name) {
         this.name = name;
     }
@@ -29,8 +28,7 @@ class Person {
     }
 }
 
-// Child Class (Derived Class)
-// Inheritance: Student inherits Person
+
 class Student extends Person {
 
     private String course;

@@ -46,6 +46,7 @@ public class SecondMonthlyExam {
         searchNumber(numbers, target);
 
         displayEvenNumbers(numbers);
+        scanner.close();
     }
 }
         
